@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>🎟️ Book Your Movie Ticket</h2>
+        <form method="POST">
+            <label>Name:</label><br>
+            <input type="text" name="name" required><br>
+
+            <label>Select Movie:</label><br>
+            <select name="movie">
+                <option>Darling</option>
+                <option>Bahubali</option>
+                <option>Rajsaab</option>
+                <option>Spirit</option>
+            </select><br>
+
+            <label>Select Seat:</label><br>
+            <input type="text" name="seat" placeholder="A1, A2..." required><br>
+
+            <label>Select Snacks:</label><br>
+            <input type="checkbox" name="snacks" value="Popcorn"> Popcorn<br>
+            <input type="checkbox" name="snacks" value="Coke"> Coke<br>
+            <input type="checkbox" name="snacks" value="Nachos"> Nachos<br>
+            <input type="checkbox" name="snacks" value="Burger"> Burger<br><br>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>
